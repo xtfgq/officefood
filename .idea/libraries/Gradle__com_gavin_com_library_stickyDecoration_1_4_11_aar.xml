@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.gavin.com.library:stickyDecoration:1.4.11@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stickyDecoration-1.4.11.aar/3846a48ae3b318008ba0d4819d133f2c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stickyDecoration-1.4.11.aar/3846a48ae3b318008ba0d4819d133f2c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gavin.com.library/stickyDecoration/1.4.11/2c97cdc081d93c3e0393f5075a50e6e6fe88a61/stickyDecoration-1.4.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
