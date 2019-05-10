@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <include layout="@layout/toolbar_layout" />
+    <LinearLayout
+        android:id="@+id/tag_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="28dp" />
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="28dp" />
+    <TextView
+        android:id="@+id/tv_property"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="28dp" />
+    <TextView
+        android:id="@+id/tv_chuliang"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="28dp" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="28dp" />
+    <TextView
+        android:id="@+id/tv_person"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="28dp" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_height="28dp" />
+    <TextView
+
+        android:id="@+id/tv_crash"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tag_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/tag_3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checknocrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/check_box"
+            android:button="@null"
+            android:layout_gravity="center_vertical"
+            android:checked="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="巡查无异常"/>
+            <CheckBox
+                android:id="@+id/checkboxcrash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/check_box"
+                android:button="@null"
+                android:layout_gravity="center_vertical"
+                android:checked="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="巡查异常"/>
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_has_crash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:text=""/>
+        <com.xxx.ency.widget.ContainsEmojiEditText
+            android:id="@+id/ed_crash"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="256dp"
+            android:layout_marginTop="5dp"
+            android:gravity="top|left"
+            android:hint="异常情况(最多200个字)"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:maxLength="200"
+            android:background="@drawable/edit_shape"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnlogin"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/register_btn_bg"
+        android:text="提   交"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

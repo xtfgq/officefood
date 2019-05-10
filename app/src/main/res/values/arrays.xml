@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!--管理员-->
+    <string-array name="menu_0">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>仓储检查</item>
+        <item>作业管理</item>
+        <item>扦样送检</item>
+        <item>维修管理</item>
+        <item>区域管理</item>
+        <item>仓库管理</item>
+        <item>工作日志</item>
+        <item>委托管理</item>
+        <!--<item>安全管理</item>-->
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+   <!--保管员-->
+    <string-array name="menu_1">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>仓储检查</item>
+        <item>作业管理</item>
+        <item>扦样送检</item>
+        <item>维修管理</item>
+        <item>委托管理</item>
+        <!--<item>安全管理</item>-->
+        <item>工作日志</item>
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+    <!--检验员-->
+    <string-array name="menu_2">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>扦样送检</item>
+        <item>委托管理</item>
+        <!--<item>安全管理</item>-->
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+    <!--维修员-->
+    <string-array name="menu_3">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>维修管理</item>
+        <item>委托管理</item>
+        <!--<item>安全管理</item>-->
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+
+    <!--总经理-->
+    <string-array name="menu_4">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>移动巡仓</item>
+        <!--<item>安全管理</item>-->
+        <item>委托管理</item>
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+    <!--科长-->
+
+    <string-array name="menu_5">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>作业管理</item>
+        <item>移动巡仓</item>
+ <!--<item>安全管理</item>-->
+        <item>委托管理</item>
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+    <!--副科长-->
+    <string-array name="menu_7">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>作业管理</item>
+        <item>委托管理</item>
+        <item>移动巡仓</item>
+        <!--<item>安全管理</item>-->
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+    <!--副总经理-->
+    <string-array name="menu_8">
+        <item>储粮科技</item>
+        <item>我的消息</item>
+        <item>移动巡仓</item>
+        <!--<item>安全管理</item>-->
+        <item>委托管理</item>
+        <item>任务提醒</item>
+        <item>设置</item>
+        <item>关于</item>
+    </string-array>
+</resources>

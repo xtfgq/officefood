@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_layout" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="派发给："/>
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="任务标题："/>
+        <com.xxx.ency.widget.ContainsEmojiEditText
+            android:theme="@style/MyEditText"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="15dp"
+            android:maxLength="10"
+            android:text=""/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_start"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_address_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="开始时间"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_value_start"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="22dp"
+            android:layout_toRightOf="@+id/tv_out_hygiene"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="请选择开始时间"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/hit_txt_color"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow_r"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_end"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="结束时间"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_select_end"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="22dp"
+            android:layout_toRightOf="@+id/tv_out_hygiene"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="请选择结束时间"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/hit_txt_color"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow_r"
+            />
+    </RelativeLayout>
+    <com.xxx.ency.widget.ContainsEmojiEditText
+        android:id="@+id/ed_crash"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="top|left"
+        android:background="@drawable/edit_shape"
+        android:hint="最多100个字"
+        android:maxLength="100"/>
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/register_btn_bg"
+            android:text="派  发"
+            android:textSize="14sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

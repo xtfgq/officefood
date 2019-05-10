@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rlseclectplace"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            />
+
+
+        <com.xxx.ency.widget.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_user_tx1"
+            />
+    </RelativeLayout>
+        <View
+            style="@style/Line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <RelativeLayout
+            android:id="@+id/rlsex"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:visibility="visible"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="姓名"
+                android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:layout_marginRight="4dp"
+                />
+
+            <com.xxx.ency.widget.ContainsEmojiEditText
+                android:id="@+id/tv_sex_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="22dp"
+                android:layout_toRightOf="@+id/tv_sex"
+                android:background="@null"
+                android:singleLine="true"
+
+                android:gravity="right|center_vertical"
+                android:textColor="#636165"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/register_btn_bg"
+        android:text="确  定"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

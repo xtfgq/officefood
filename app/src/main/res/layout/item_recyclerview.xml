@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_value"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_child"
+            android:layout_width="127dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="7dp"
+            android:gravity="center_vertical"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:layout_marginRight="22dp"
+            android:layout_toRightOf="@+id/tv_out_hygiene"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:gravity="center_vertical"
+            android:textColor="@color/hit_txt_color"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow_r"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

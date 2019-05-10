@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/item_weixin"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/weixin" />
+        <item
+            android:id="@+id/item_one"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/one"
+            android:visible="false"/>
+        <item
+            android:id="@+id/item_gank"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/gank" />
+        <item
+            android:id="@+id/item_eyepetizer"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/eyepetizer"
+            android:visible="false"/>
+        <item
+            android:id="@+id/item_like"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/mylike"
+            android:visible="false"/>
+        <item
+            android:id="@+id/item_myMsg"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/myMessage" />
+        <item
+            android:id="@+id/item_securitycheck"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/securitycheck" />
+        <item
+            android:id="@+id/item_area"
+            android:icon="@drawable/ic_tip"
+
+            android:title="@string/areamanager" />
+        <item
+            android:id="@+id/item_servicelist"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/servicelist" />
+        <item
+            android:id="@+id/item_checklist"
+            android:icon="@drawable/ic_tip"
+            android:title="@string/checklist" />
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/item_setting"
+            android:title="设置" />
+        <item
+            android:id="@+id/item_about"
+            android:title="关于" />
+    </group>
+</menu>

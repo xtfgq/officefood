@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <include layout="@layout/toolbar_layout" />
+    <RelativeLayout
+        android:id="@+id/rlseclectplace"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+        android:visibility="gone"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="责任区域"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_place_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="22dp"
+            android:layout_toRightOf="@+id/tv_place"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="请选择区域"
+            android:gravity="right|center_vertical"
+            android:textColor="#636165"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow_r"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <RelativeLayout
+        android:id="@+id/rlcrash"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:visibility="visible"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_out_tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="责任区域"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_out_tmp_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="22dp"
+            android:layout_toRightOf="@+id/tv_out_tmp"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="有无安全隐患"
+            android:gravity="right|center_vertical"
+            android:textColor="#636165"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow_r"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/Line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+    <RelativeLayout
+        android:id="@+id/rlcrash_type"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_type_crash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="隐患类型"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_crash_type_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="22dp"
+            android:layout_toRightOf="@+id/tv_type_crash"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="请选择隐患类型"
+            android:gravity="right|center_vertical"
+            android:textColor="#636165"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow_r"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/register_btn_bg"
+        android:text="提  交"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#59A675</color>
+    <color name="colorPrimaryDark">#59A675</color>
+    <color name="colorAccent">#59A675</color>
+    <color name="colorPositive">#59A675</color>
+    <color name="colorNegative">#000000</color>
+    <color name="colorTxt">#2c2c2c</color>
+    <color name="colorTxt2">#7E7E7E</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorItemSelected">#59A675</color>
+    <color name="colorItemUnselected">#9b9b9b</color>
+    <color name="colorLine">#f1f1f1</color>
+    <color name="red7">#E64340</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#E3E3E2</color>
+    <color name="gray1">#7e7e7e</color>
+    <color name="gray_line">#e1e1e2</color>
+    <color name="line">#D2D2D2</color>
+    <color name="hit_txt_color">#636165</color>
+    <color name="text_color_black">#0f2536</color>
+    <color name="text_color_gray">#949395</color>
+    <color name="title1">#4a4a4a</color>
+    <color name="title2">#a2a2a2</color>
+    <color name="butten_green">#1AAC19</color>
+</resources>
