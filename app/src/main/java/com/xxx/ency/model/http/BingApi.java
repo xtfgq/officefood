@@ -21,14 +21,12 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 /**login
- * Bing壁纸
+ *
  * Created by xiarh on 2017/11/3.
  */
 
 public interface BingApi {
-
     String HOST = Constants.HOST;
-
     /**
      * Bing随机壁纸
      *
@@ -37,8 +35,6 @@ public interface BingApi {
      * @param type
      * @return
      */
-
-
     @FormUrlEncoded
     @POST("api")
     Call<ResponseBody> postLogin(@Field("method") String method, @Field("param") String stu);

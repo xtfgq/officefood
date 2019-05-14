@@ -16,6 +16,8 @@ import com.xxx.ency.util.ButtonUtils;
 import com.xxx.ency.view.servicelist.ServiceListActvity;
 
 
+import org.greenrobot.eventbus.EventBus;
+
 import javax.inject.Inject;
 
 import butterknife.BindView;
@@ -123,5 +125,9 @@ public class SecurityListActivity extends SupportActivity {
         toolbarRightitle.setEnabled(true);
     }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().post(222);
+    }
 }

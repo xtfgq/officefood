@@ -24,11 +24,8 @@ public interface GankApi {
     String HOST = Constants.HOST;
 
     /**
-     * 干货数据
      *
-     * @param type 数据类型：福利 | Android | iOS | 休息视频 | 拓展资源 | 前端 | all
-     * @param size 请求个数
-     * @param page 页数
+     *
      */
     @FormUrlEncoded
     @POST("api")

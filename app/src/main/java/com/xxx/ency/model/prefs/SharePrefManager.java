@@ -2,20 +2,14 @@ package com.xxx.ency.model.prefs;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
 import javax.inject.Inject;
-
 /**
  * SharePreferences管理类
  * Created by xiarh on 2017/9/21.
  */
-
 public class SharePrefManager {
-
     private static final String SHAREDPREFERENCES_NAME = "my_sp";
-
     private SharedPreferences SPfres;
-
     @Inject
     public SharePrefManager(Context context) {
         SPfres = context.getSharedPreferences(SHAREDPREFERENCES_NAME, Context.MODE_PRIVATE);
@@ -80,7 +74,6 @@ public class SharePrefManager {
     public void setDeviceId(String deviceId) {
         SPfres.edit().putString("deviceId", deviceId).commit();
     }
-
     /**
      * 得到token
      *
@@ -89,7 +82,6 @@ public class SharePrefManager {
     public String getLocalToken() {
         return SPfres.getString("LoginToken", "");
     }
-
     /**
      * 设置用户
      *
@@ -101,11 +93,9 @@ public class SharePrefManager {
     public void setUseId(String userid) {
         SPfres.edit().putString("Userid", userid).commit();
     }
-
     public String getDeviceId() {
         return SPfres.getString("deviceId", "");
     }
-
     public String getUserName() {
         return SPfres.getString("Name", "");
     }

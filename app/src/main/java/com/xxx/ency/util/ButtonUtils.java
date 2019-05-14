@@ -33,7 +33,6 @@ public class ButtonUtils {
         long time = System.currentTimeMillis();
         long timeD = time - lastClickTime;
         if (lastButtonId == buttonId && lastClickTime > 0 && timeD < diff) {
-
             return true;
         }
         lastClickTime = time;

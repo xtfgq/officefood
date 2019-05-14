@@ -14,7 +14,7 @@ public class Constants {
 
     // bugly APP ID
     public static final String BUGLY_APP_ID = "792af661e6";
-    public static  String XINGE = "";
+    public static String XINGE = "";
 
 
     // fir.im API Token
@@ -28,7 +28,7 @@ public class Constants {
 
     public static final String PATH_DATA = EncyApplication.getInstance().getCacheDir().getAbsolutePath() + File.separator + "data";
 
-   public static final String PATH_CACHE = PATH_DATA + "/NetCache";
+    public static final String PATH_CACHE = PATH_DATA + "/NetCache";
     public static final String HOST = "http://api.fc1b.com/";
 //    public static final String HOST = "http://zhengzhouapi.fc1b.com/";
 //   public static final String HOST = "http://192.168.4.143:8080/";
@@ -42,5 +42,5 @@ public class Constants {
     public static final int TYPE_GANK = 2;
 
     public static final int TYPE_VIDEO = 3;
-    public static  String token = "";
+    public static String token = "";
 }

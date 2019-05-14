@@ -351,7 +351,22 @@ public class SecurityCheckListFragment extends BaseMVPFragment<SecurityCheckList
                 }else {
                     mPresenter.getCheckData();
                 }
+                pvTime = new TimePickerBuilder(getActivity(), new OnTimeSelectListener() {
+                    @Override
+                    public void onTimeSelect(Date date, View v) {
+                        if (position != -1) {
+                            res.get(position).setTxtValue(getTime(date));
+                            res.get(position).setShowText(getTime(date));
 
+                            postMap(res.get(position));
+                            getCheckList(res);
+
+                        }
+                    }
+                }).setCancelColor(getResources().getColor(R.color.colorPrimary)).
+                        setSubmitColor(getResources().getColor(R.color.colorPrimary)).
+                        setType(new boolean[]{true, true, true, true, true, false}).
+                        build();
             } else if ("2".equals(type)) {
                 if (daoManager.queryByNo(getRoomId(), getUserid())) {
                     CheckWarehouse bean = daoManager.queryByNoBean(getRoomId(),
@@ -372,6 +387,22 @@ public class SecurityCheckListFragment extends BaseMVPFragment<SecurityCheckList
                 } else {
                     mPresenter.getCheckData();
                 }
+                pvTime = new TimePickerBuilder(getActivity(), new OnTimeSelectListener() {
+                    @Override
+                    public void onTimeSelect(Date date, View v) {
+                        if (position != -1) {
+                            res.get(position).setTxtValue(getTime(date));
+                            res.get(position).setShowText(getTime(date));
+
+                            postMap(res.get(position));
+                            getCheckList(res);
+
+                        }
+                    }
+                }).setCancelColor(getResources().getColor(R.color.colorPrimary)).
+                        setSubmitColor(getResources().getColor(R.color.colorPrimary)).
+                        setType(new boolean[]{true, true, true, true, true, false}).
+                        build();
             } else  {
 
                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
@@ -399,7 +430,22 @@ public class SecurityCheckListFragment extends BaseMVPFragment<SecurityCheckList
                 }else {
                     mPresenter.getCheckData();
                 }
+                pvTime = new TimePickerBuilder(getActivity(), new OnTimeSelectListener() {
+                    @Override
+                    public void onTimeSelect(Date date, View v) {
+                        if (position != -1) {
+                            res.get(position).setTxtValue(getTime(date));
+                            res.get(position).setShowText(getTime(date));
 
+                            postMap(res.get(position));
+                            getCheckList(res);
+
+                        }
+                    }
+                }).setCancelColor(getResources().getColor(R.color.colorPrimary)).
+                        setSubmitColor(getResources().getColor(R.color.colorPrimary)).
+                        setType(new boolean[]{true, true, true, false, false, false}).
+                        build();
 
                 if("2".equals(step)&&"3".equals(type)) {
                     mPresenter.getReportFan();
@@ -419,22 +465,7 @@ public class SecurityCheckListFragment extends BaseMVPFragment<SecurityCheckList
 
         }
 
-        pvTime = new TimePickerBuilder(getActivity(), new OnTimeSelectListener() {
-            @Override
-            public void onTimeSelect(Date date, View v) {
-                if (position != -1) {
-                    res.get(position).setTxtValue(getTime(date));
-                    res.get(position).setShowText(getTime(date));
 
-                    postMap(res.get(position));
-                    getCheckList(res);
-
-                }
-            }
-        }).setCancelColor(getResources().getColor(R.color.colorPrimary)).
-                setSubmitColor(getResources().getColor(R.color.colorPrimary)).
-                setType(new boolean[]{true, true, true, true, true, false}).
-                build();
 
 
     }

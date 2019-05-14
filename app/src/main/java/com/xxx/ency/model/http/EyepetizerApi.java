@@ -1,7 +1,6 @@
 package com.xxx.ency.model.http;
 
 import com.xxx.ency.model.bean.VideoBean;
-
 import io.reactivex.Flowable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

@@ -1,8 +1,5 @@
 <component name="libraryTable">
   <library name="Gradle: com.davidecirillo.multichoicerecyclerview:multichoicerecyclerview:2.0.0@aar">
-    <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multichoicerecyclerview-2.0.0.aar/5f5d35413ec1083ce6e6132dc4c62c58/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multichoicerecyclerview-2.0.0.aar/5f5d35413ec1083ce6e6132dc4c62c58/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/multichoicerecyclerview-2.0.0.aar/5f5d35413ec1083ce6e6132dc4c62c58/jars/classes.jar!/" />
