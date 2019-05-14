@@ -173,9 +173,9 @@ public class LoginActivity extends BaseMVPActivity<LoginPresenter> implements
             sharePrefManager.setUser(loginBean.getUsername());
             sharePrefManager.setUseId(loginBean.getUserid());
             sharePrefManager.setLoginToken(loginBean.getToken());
-           
             Constants.token=sharePrefManager.getLocalToken();
-            finish();
+            mPresenter.getRoomData();
+
         }
 
     }
@@ -188,6 +188,11 @@ public class LoginActivity extends BaseMVPActivity<LoginPresenter> implements
     @Override
     public String getPwd() {
         return editPass.getText().toString().trim();
+    }
+
+    @Override
+    public String getUserid() {
+        return sharePrefManager.getUserId();
     }
 
     @Override
@@ -204,6 +209,11 @@ public class LoginActivity extends BaseMVPActivity<LoginPresenter> implements
                     }
                 });
         myAlertDialog.show();
+    }
+
+    @Override
+    public void showSucussFinsh() {
+        finish();
     }
 
     @Override

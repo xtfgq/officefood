@@ -506,7 +506,6 @@ public class SecurityCheckListPresenter extends RxPresenter<SecurityCheckListCon
                         }
                         mView.jobUpRes();
                     }else if(code==Constants.NET_CODE_LOGIN&&mView!=null){
-
                         goLogin();
                     }
                 } catch (JSONException e) {

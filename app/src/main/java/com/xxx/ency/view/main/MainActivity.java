@@ -372,7 +372,7 @@ public class MainActivity extends BaseMVPActivity<MainPresenter> implements
         initXgConfig();
         initFragment();
         EventBus.getDefault().register(this);
-
+        mPresenter.getWeather(sharePrefManager.getLocation());
     }
     private void goActivity(String target){
 //        clearData();

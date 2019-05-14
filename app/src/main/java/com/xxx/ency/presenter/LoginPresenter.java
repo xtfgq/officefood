@@ -8,14 +8,17 @@ import com.google.gson.Gson;
 import com.xxx.ency.base.BaseSubscriber;
 import com.xxx.ency.base.RxPresenter;
 import com.xxx.ency.config.Constants;
+import com.xxx.ency.config.EncyApplication;
 import com.xxx.ency.contract.LoginContract;
 import com.xxx.ency.model.bean.BingBean;
 import com.xxx.ency.model.bean.LoginBean;
 import com.xxx.ency.model.bean.PostLogin;
 import com.xxx.ency.model.bean.Result;
+import com.xxx.ency.model.bean.User;
 import com.xxx.ency.model.http.BingApi;
 import com.xxx.ency.util.JsonUtil;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -93,6 +96,45 @@ public class LoginPresenter extends RxPresenter<LoginContract.View>
 
 
 
+    }
+    public void getRoomData() {
+        User user=new User();
+        user.setUserId(mView.getUserid());
+        Gson gson=new Gson();
+        String route= gson.toJson(user);
+        Call<ResponseBody> call=bingApi.postToken(Constants.token,"grainStoreroomList",route);
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    JSONObject jsonObject=new JSONObject(response.body().string());
+                    int code=jsonObject.getInt("rtnCode");
+                    if(code==Constants.NET_CODE_SUCCESS&&mView!=null){
+                        JSONArray jsonArray=jsonObject.getJSONArray("res");
+                        EncyApplication.getInstance().roomMap.clear();
+                        for(int i=0;i<jsonArray.length();i++){
+                            JSONObject obj=jsonArray.getJSONObject(i);
+                            EncyApplication.getInstance().
+                                    roomMap.put(obj.getString("id"),obj.getString("name"));
+
+                        }
+                        mView.showSucussFinsh();
+                    }else {
+                        if(mView!=null)
+                            mView.showError(jsonObject.getString("rtnMsg"));
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
     }
 
 

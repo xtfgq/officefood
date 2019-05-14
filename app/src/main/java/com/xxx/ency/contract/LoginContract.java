@@ -17,7 +17,9 @@ public interface LoginContract {
         void showLoginBean(LoginBean bingBean);
         String getUserName();
         String getPwd();
+        String getUserid();
         void showMsg(String msg);
+        void showSucussFinsh();
 
 
 

@@ -84,9 +84,22 @@ public class JobAdapter extends BaseQuickAdapter<JobBean, BaseViewHolder>  {
                     helper.setText(R.id.tv_person, strD);
                 }
             } else {
-                Spanned strA= Html.fromHtml( "<b><tt>批准人：</tt></b>" +
-                        item.getAuditorUserRealName());
-                helper.setText(R.id.tv_person, strA);
+                if(sharePrefManager.getLocalMode() == 1){
+                    if(!TextUtils.isEmpty(item.getRefuseCause())) {
+                        Spanned strA= Html.fromHtml( "<b><tt>审批人：</tt></b>" +
+                                item.getAuditorUserRealName()+"<br/>"+"<b><tt>驳回原因：</tt></b>"+
+                                item.getRefuseCause());
+                        helper.setText(R.id.tv_person, strA);
+                    }else {
+                        Spanned strA= Html.fromHtml( "<b><tt>审批人：</tt></b>" +
+                                item.getAuditorUserRealName());
+                        helper.setText(R.id.tv_person, strA);
+                    }
+                }else {
+                    Spanned strA = Html.fromHtml("<b><tt>审批人：</tt></b>" +
+                            item.getAuditorUserRealName());
+                    helper.setText(R.id.tv_person, strA);
+                }
             }
 
         }else if(title.contains("安全")){
