@@ -29,7 +29,7 @@ public class Constants {
     public static final String PATH_DATA = EncyApplication.getInstance().getCacheDir().getAbsolutePath() + File.separator + "data";
 
     public static final String PATH_CACHE = PATH_DATA + "/NetCache";
-    public static final String HOST = "http://api.fc1b.com/";
+    public static  String HOST = "http://api.fc1b.com/";
 //    public static final String HOST = "http://zhengzhouapi.fc1b.com/";
 //   public static final String HOST = "http://192.168.4.143:8080/";
 

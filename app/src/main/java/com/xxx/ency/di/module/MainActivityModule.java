@@ -60,7 +60,6 @@ public class MainActivityModule {
                 .baseUrl(WeatherApi.HOST)
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
-
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
     }
