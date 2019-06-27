@@ -203,9 +203,6 @@ public class LoginActivity extends BaseMVPActivity<LoginPresenter> implements
                 .setPositiveButton("确认", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-
-
                     }
                 });
         myAlertDialog.show();

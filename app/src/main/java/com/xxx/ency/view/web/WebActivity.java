@@ -34,9 +34,7 @@ import com.xxx.ency.model.db.GreenDaoManager;
 import com.xxx.ency.model.prefs.SharePrefManager;
 import com.xxx.ency.util.SnackBarUtils;
 import com.xxx.ency.widget.X5WebView;
-
 import org.greenrobot.eventbus.EventBus;
-
 import butterknife.BindView;
 
 /**

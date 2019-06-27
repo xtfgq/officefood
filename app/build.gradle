@@ -9,7 +9,6 @@ greendao {
 
 android {
     //配置签名信息
-
     signingConfigs {
         release {
             storeFile file("office.jks")
@@ -33,13 +32,10 @@ android {
             abiFilters 'armeabi', 'x86', 'armeabi-v7a'
         }
         manifestPlaceholders = [
-
                 XG_ACCESS_ID:"2100326516",
                 XG_ACCESS_KEY : "ASQA284Y7D7C",
                 HW_APPID: "100654393"
         ]
-
-
     }
 
     flavorDimensions "default"
@@ -188,4 +184,4 @@ dependencies {
     implementation 'top.zibin:Luban:1.1.8'
 }
 // 依赖插件脚本
-//apply from: 'tinker-support.gradle'
+apply from: 'tinker-support.gradle'

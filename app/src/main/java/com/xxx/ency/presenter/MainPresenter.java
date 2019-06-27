@@ -170,9 +170,7 @@ public class MainPresenter extends RxPresenter<MainContract.View> implements Mai
                     }else {
                         mView.showError("请到仓库附近工作");
                     }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }

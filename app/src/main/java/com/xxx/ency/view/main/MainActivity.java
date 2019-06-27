@@ -34,6 +34,7 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.hb.dialog.myDialog.MyAlertDialog;
+import com.squareup.haha.perflib.Main;
 import com.tencent.android.tpush.XGIOperateCallback;
 import com.tencent.android.tpush.XGPushClickedResult;
 import com.tencent.android.tpush.XGPushConfig;
@@ -240,10 +241,6 @@ public class MainActivity extends BaseMVPActivity<MainPresenter> implements
     String[] menu7;
     String[] menu8;
     private ImageView ivHead;
-
-
-
-
     @Override
     protected void initialize() {
         setSupportActionBar(mToolbar);
@@ -626,8 +623,6 @@ public class MainActivity extends BaseMVPActivity<MainPresenter> implements
     public void getPermissionSuccess() {
         TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         sharePrefManager.setDeviceId(tm.getDeviceId());
-
-
         mPresenter.checkUpdate();
         initLocation();
     }
@@ -706,16 +701,30 @@ public class MainActivity extends BaseMVPActivity<MainPresenter> implements
             if (checkType == 1) {
                 intent1.putExtra("title", "定项检查");
                 intent1.putExtra("type", "1");
+                intent1.putExtra("id", id);
+                intent1.putExtra("fromTo", "6");
+                startActivity(intent1);
             } else if (checkType == 2) {
-                intent1.putExtra("title", "入仓检查");
-                intent1.putExtra("type", "2");
+
+                MyAlertDialog myAlertDialog = new MyAlertDialog(MainActivity.this).builder()
+                        .setTitle("提示")
+                        .setMsg("请对准二维码进行扫描")
+                        .setPositiveButton("确认", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                startActivity(new Intent(MainActivity.this,ScanCodeActivity.class));
+                            }
+                        });
+                myAlertDialog.show();
+
             } else {
                 intent1.putExtra("title", "通风作业");
                 intent1.putExtra("type", "3");
+                intent1.putExtra("id", id);
+                intent1.putExtra("fromTo", "6");
+                startActivity(intent1);
             }
-            intent1.putExtra("id", id);
-            intent1.putExtra("fromTo", "6");
-            startActivity(intent1);
+
 
 
     }

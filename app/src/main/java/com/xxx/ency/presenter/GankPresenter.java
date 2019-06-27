@@ -1,19 +1,11 @@
 package com.xxx.ency.presenter;
 
 import android.content.Context;
-import android.util.Log;
-import android.view.View;
-
 import com.google.gson.Gson;
-import com.hb.dialog.myDialog.MyAlertDialog;
-import com.xxx.ency.base.BaseSubscriber;
-import com.xxx.ency.base.RxBus;
 import com.xxx.ency.base.RxPresenter;
 import com.xxx.ency.config.Constants;
 import com.xxx.ency.contract.GankContract;
-import com.xxx.ency.model.bean.CmsPostBean;
 import com.xxx.ency.model.bean.DeputeList;
-import com.xxx.ency.model.bean.GankBean;
 import com.xxx.ency.model.bean.JobBean;
 import com.xxx.ency.model.bean.JobPostBean;
 import com.xxx.ency.model.bean.PostBrow;
@@ -21,19 +13,13 @@ import com.xxx.ency.model.bean.PostCheckOfficeItem;
 import com.xxx.ency.model.bean.PostMessage;
 import com.xxx.ency.model.bean.ServicePost;
 import com.xxx.ency.model.http.GankApi;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.inject.Inject;
-
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -152,7 +138,6 @@ public class GankPresenter extends RxPresenter<GankContract.View> implements Gan
                                     jobBean1.setCensorshipTime(object.getString("censorshipTime"));
                                     jobBean1.setData(object.getString("createTime"));
                                     jobBean1.setId(object.getString("id"));
-
                                     jobBean1.setResult(object.getString("result"));
                                 }
                                 jobBeans.add(jobBean1);
@@ -243,8 +228,6 @@ public class GankPresenter extends RxPresenter<GankContract.View> implements Gan
             }else {
                 servicePost.setReceiveUserId(mView.getUserid());
             }
-
-
             servicePost.setCurrentPage(page+"");
             servicePost.setPageSize(size+"");
             Gson gson = new Gson();
@@ -271,7 +254,6 @@ public class GankPresenter extends RxPresenter<GankContract.View> implements Gan
                                 jobBean1.setReceiveUserId(object.getString("receiveUserRealName"));
                                 jobBean1.setSendUserId(object.getString("sendUserRealName"));
                                 jobBean1.setType(type);
-
                                 jobBeans.add(jobBean1);
                             }
                             mView.showGankData(jobBeans);

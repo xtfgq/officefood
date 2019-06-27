@@ -47,6 +47,7 @@ public class EncyApplication<attachBaseContext> extends MultiDexApplication {
     public Map<String,String> areaMap=new HashMap<>();
     public Map<Integer,WorkTypeData> workMap=new HashMap<>();
     public  String name[] = {"李连杰","赵普","赵丽颖","胡景涛","刘潘坤","张三"};
+    public  String scanCode[] = {"α","β","γ","δ"};
 
     @Override
     public void onCreate() {

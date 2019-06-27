@@ -41,7 +41,6 @@ public abstract class BaseActivity extends SupportActivity {
         onViewCreated();
         sharePrefManager=new SharePrefManager(this);
         AppActivityTaskManager.getInstance().addActivity(this);
-
         setTitle("");
         initialize();
     }

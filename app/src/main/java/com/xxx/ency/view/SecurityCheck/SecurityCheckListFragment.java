@@ -156,9 +156,6 @@ public class SecurityCheckListFragment extends BaseMVPFragment<SecurityCheckList
             }
             return step;
         }
-
-
-
     }
 
     @Override
